@@ -1,0 +1,1 @@
+python BusEdge/client/scripts/use_rosbag/get_gps_coords.py -i ./potential_snow_bags/checked/bus_2022-01-07-09-04-01_10.bag -o ./2022-01-07-09-04-info.pkl --cam-id 3
