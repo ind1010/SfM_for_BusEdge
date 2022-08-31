@@ -20,3 +20,25 @@ This repository contains code for the paper **Leveraging Structure from Motion t
 ### Requirements:
 * Used CUDA 11.1
 * See ``requirements.txt``
+
+### Reference:
+If you find this code useful, please cite it as follows:
+``
+@online{panigrahi2022riss,
+  author = {Indu Panigrahi and Tom Bu and Christoph Mertz},
+  title = {Leveraging Structure from Motion to Localize Inaccessible Bus Stops},
+  year = 2022,
+  url = https://github.com/ind1010/SfM_for_BusEdge,
+}
+
+
+@mastersthesis{tombu,
+author = {Tom Bu},
+title = {{Towards HD Map Updates with Crosswalk Change Detection from Vehicle-Mounted Cameras}},
+year = {2022},
+month = {August},
+school = {Carnegie Mellon University},
+address = {Pittsburgh, PA},
+number = {CMU-RI-TR-22-34},
+}
+``
