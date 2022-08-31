@@ -26,7 +26,7 @@ If you find this code useful, please cite it as follows:
 ```
 @online{panigrahi2022riss,
   author = {Indu Panigrahi and Tom Bu and Christoph Mertz},
-  title = {Leveraging Structure from Motion to Localize Inaccessible Bus Stops},
+  title = {{Leveraging Structure from Motion to Localize Inaccessible Bus Stops}},
   year = 2022,
   url = https://github.com/ind1010/SfM_for_BusEdge,
 }
