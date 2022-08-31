@@ -23,7 +23,7 @@ This repository contains code for the paper **Leveraging Structure from Motion t
 
 ### Reference:
 If you find this code useful, please cite it as follows:
-``
+```
 @online{panigrahi2022riss,
   author = {Indu Panigrahi and Tom Bu and Christoph Mertz},
   title = {Leveraging Structure from Motion to Localize Inaccessible Bus Stops},
@@ -41,4 +41,4 @@ school = {Carnegie Mellon University},
 address = {Pittsburgh, PA},
 number = {CMU-RI-TR-22-34},
 }
-``
+```
