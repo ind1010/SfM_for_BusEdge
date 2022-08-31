@@ -2,12 +2,19 @@
 
 Authors: Indu Panigrahi, Tom Bu, Christoph Mertz
 
-Contents:
+### Contents:
 * ``BusEdge/`` - This directory contains scripts for obtaining and filtering images from the [BusEdge Platform](https://github.com/CanboYe/BusEdge).
 * ``Mask2Former/`` - This directory contains the segmentation model that we use (Mask2Former) and scripts for detecting snow coverage. See the README for more information.
 * ``colmap/`` - This directory contains sample images (references + query) and the associated reconstruction in the form of text files. These are used by the scripts in ``Mask2Former/``.
 
 
-Requirements:
+### How to use this repository:
+1. Run COLMAP on clear weather images from a scene and then re-run COLMAP with the query added. Then, save the resulting reconstruction as text files using the naming conventions that we use in the sample files and folders that we provide in ``colmap/``.
+2. Run ``Mask2Former/estimate_ground_plane.ipynb``. We provide sample output from this notebook in ``Mask2Former/sample_output``.
+3. Separate the query image from the clear weather images into the directory structure demonstrated in ``Mask2Former/images``.
+4. Run ``Mask2Former/detect_coverage.ipynb``. This notebook performs the detection of snow-covered sidewalks.
+
+
+### Requirements:
 * Used CUDA 11.1
 * See ``requirements.txt``
