@@ -32,7 +32,7 @@ If you find this code useful, please cite it as follows:
 }
 
 
-@mastersthesis{tombu,
+@mastersthesis{bu2022crosswalk,
 author = {Tom Bu},
 title = {{Towards HD Map Updates with Crosswalk Change Detection from Vehicle-Mounted Cameras}},
 year = {2022},
