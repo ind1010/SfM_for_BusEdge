@@ -5,7 +5,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Filters image according to input criteria (fixed from original BusEdge repo)
+Filters image according to input criteria (modified by Indu Panigrahi from original BusEdge repo)
 """
 
 import argparse
@@ -25,10 +25,6 @@ from tqdm import tqdm
 class Preprocessor:
     def __init__(self, args):
         self.args = args
-
-        f = open('/home/ipanigra/Downloads/filename.txt','r')
-        args.input = f.read()
-        f.close()
 
         if os.path.basename(args.input).split(".")[-1] == "bag":
             self.bag_files = [args.input]
@@ -89,27 +85,10 @@ class Preprocessor:
         return pass_flag
 
     def gps_filtering(self):
-
-        # lat_array = np.array(
-        #     [
-        #         # self.CUR_GPS.latitude,
-        #         self.args.gps_filtering[0],
-        #         self.args.gps_filtering[2],
-        #     ]
-        # ).sort(axis=0)
-        # lon_array = np.array(
-        #     [
-        #         # self.CUR_GPS.longitude,
-        #         self.args.gps_filtering[1],
-        #         self.args.gps_filtering[3],
-        #     ]
-        # ).sort(axis=0)
         lat_array = np.array([self.args.gps_filtering[0],self.args.gps_filtering[2]])
         lon_array = np.array([self.args.gps_filtering[1],self.args.gps_filtering[3]])
         lat_array.sort()
         lon_array.sort()
-        # lat_within = np.argsort(lat_array)[1] == 0
-        # lon_within = np.argsort(lon_array)[1] == 0
         lat_within = (self.CUR_GPS.latitude >= lat_array[0] and self.CUR_GPS.latitude <= lat_array[1])
         lon_within = (self.CUR_GPS.longitude >= lon_array[0] and self.CUR_GPS.longitude <= lon_array[1])
         print("{}, {}".format(self.CUR_GPS.latitude, self.CUR_GPS.longitude))
