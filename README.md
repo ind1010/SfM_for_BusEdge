@@ -8,6 +8,7 @@ Authors: Indu Panigrahi, Tom Bu, and Christoph Mertz
 * ``colmap/`` - This directory contains sample images (references + query) and the associated reconstruction in the form of text files. These are used by the scripts in ``Mask2Former/``.
 
 ### Instructions:
+[Here is a dataset of the images used in this work and along with images in additional categories](https://www.kaggle.com/datasets/indupanigrahi/busedge-sidewalks-and-more)
 1. Run [COLMAP](https://colmap.github.io/) on clear weather images from a scene and then re-run COLMAP with the query added. Save the resulting reconstruction as text files using the naming conventions that we use in the sample files and folders that we provide in ``colmap/``.
 2. Run ``Mask2Former/estimate_ground_plane.ipynb``. We provide sample output from this notebook in ``Mask2Former/sample_output/``.
 3. Separate the query image from the clear weather images into the directory structure demonstrated in ``Mask2Former/images/``.
