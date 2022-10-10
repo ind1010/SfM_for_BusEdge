@@ -6,7 +6,7 @@ Authors: Indu Panigrahi, Tom Bu, and Christoph Mertz
 * ``BusEdge/`` - This directory contains scripts for obtaining and filtering images from the [BusEdge Platform](https://github.com/CanboYe/BusEdge).
 * ``Mask2Former/`` - This directory contains the segmentation model that we use ([Mask2Former](https://github.com/facebookresearch/Mask2Former)) and scripts for detecting snow coverage. See [``Mask2Former/README.md``](https://github.com/ind1010/SfM_for_BusEdge/blob/c7cb933717475d78cfac8ad0d290e826db85e23e/Mask2Former/README.md) for more information.
 * ``colmap/`` - This directory contains sample images (references + query) and the associated reconstruction in the form of text files. These are used by the scripts in ``Mask2Former/``.
-* ``other_files/`` - This directory contains files that list some information about image sequences and calendar dates with snowy weather in Pittsburgh
+* ``other_files/`` - This directory contains files that list some information about image sequences and calendar dates with snowy weather in Pittsburgh.
 
 ### Instructions:
 [Here is a dataset of the images used in this work and along with images in additional categories](https://www.kaggle.com/datasets/indupanigrahi/busedge-sidewalks-and-more)
