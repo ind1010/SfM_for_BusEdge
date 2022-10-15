@@ -1,6 +1,8 @@
 ## Leveraging Structure from Motion to Localize Inaccessible Bus Stops
 Authors: Indu Panigrahi, Tom Bu, and Christoph Mertz
 <br>
+[Paper available here](https://arxiv.org/abs/2210.03646)
+<br>
 
 ### Contents:
 * ``BusEdge/`` - This directory contains scripts for obtaining and filtering images from the [BusEdge Platform](https://github.com/CanboYe/BusEdge).
@@ -22,11 +24,12 @@ Authors: Indu Panigrahi, Tom Bu, and Christoph Mertz
 ### Reference:
 Please cite this code as follows:
 ```
-@online{panigrahi2022riss,
-  author = {Indu Panigrahi and Tom Bu and Christoph Mertz},
-  title = {{Leveraging Structure from Motion to Localize Inaccessible Bus Stops}},
-  year = 2022,
-  url = https://github.com/ind1010/SfM_for_BusEdge,
+@article{panigrahi2022riss,
+  author  = {Indu Panigrahi and Tom Bu and Christoph Mertz},
+  title   = {{Leveraging Structure from Motion to Localize Inaccessible Bus Stops}},
+  journal = {{Robotics Institute Summer Scholars Working Papers Journal}},
+  year    = 2022,
+  volume  = {10}
 }
 
 
